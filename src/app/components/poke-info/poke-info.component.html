@@ -1,7 +1,7 @@
 <div class="container">
     <mat-toolbar>
         <mat-toolbar-row>
-            <img src="../../../assets/imagenes/volver.png" alt="Boton_Volver" width="50" title="Da click para regresar." height="50" (click)="home()">
+            <img src="../../../assets/imagenes/valor.png" class="boton_volver" alt="Boton_Volver" width="50" title="Da click para regresar." height="50" (click)="home()">
         </mat-toolbar-row>
     </mat-toolbar>
     <mat-card class="card">
@@ -10,6 +10,8 @@
             <mat-card-title>{{pokemon.name}}</mat-card-title>
             <mat-card-subtitle># {{pokemon.id}}</mat-card-subtitle>
             <p class="exp">{{pokemon.base_experience}} Exp</p>
+            <label><img class="ultra_ball" src="../../../assets/imagenes/ultra-bola.png" width="25" alt=""></label>
+
         </mat-card-header>
         <img class="mat-card-image " src="{{pokemonIMG}}" alt="pokemonimg" width="150">
         <mat-card-content class="content">
