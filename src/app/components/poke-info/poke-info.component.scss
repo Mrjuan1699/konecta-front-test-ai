@@ -1,3 +1,7 @@
+* {
+    text-transform: capitalize;
+}
+
 img {
     cursor: pointer;
 }
@@ -27,6 +31,7 @@ mat-card-header {
 
 .content {
     margin-left: 10px;
+    margin-top: -40px;
 }
 
 .container {
@@ -55,4 +60,11 @@ mat-card-header {
 
 .color {
     background-color: #BA55D3;
+}
+
+.exp {
+    margin-top: 10px;
+    font-weight: bold;
+    text-align: center;
+    color: #696969;
 }
