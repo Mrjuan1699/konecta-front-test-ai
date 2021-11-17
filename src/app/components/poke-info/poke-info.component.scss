@@ -1,0 +1,54 @@
+img {
+    cursor: pointer;
+}
+
+.card {
+    width: 280px;
+    margin: auto;
+    margin-top: 35px;
+}
+
+mat-card-title {
+    text-align: center;
+    margin-top: -25px;
+}
+
+mat-card-subtitle {
+    color: black;
+    font-weight: bold;
+    text-align: center;
+}
+
+mat-card-header {
+    display: block;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+}
+
+.content {
+    margin-left: 10px;
+}
+
+.container {
+    background: #f1f1f1;
+}
+
+.tipo {
+    background-color: #90EE90;
+}
+
+.altura {
+    background-color: #FAFAD2;
+}
+
+.peso {
+    background-color: #A52A2A;
+}
+
+.mat-card-image {
+    background-image: url(../../../assets/imagenes/fondo.jpg);
+    background-size: 325px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: 10px;
+}

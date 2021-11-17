@@ -1,1 +1,23 @@
-<p>poke-info works!</p>
+<div class="container">
+    <mat-toolbar>
+        <mat-toolbar-row>
+            <img src="../../../assets/imagenes/volver.png" alt="Boton_Volver" width="50" title="Da click para regresar." height="50" (click)="home()">
+        </mat-toolbar-row>
+    </mat-toolbar>
+    <mat-card class="card">
+        <mat-card-header>
+            <div mat-card-avatar class="example-header-image"></div>
+            <mat-card-title>{{pokemon.name}}</mat-card-title>
+            <mat-card-subtitle># {{pokemon.id}}</mat-card-subtitle>
+        </mat-card-header>
+        <img class="mat-card-image " src="{{pokemonIMG}}" alt="pokemonimg" width="20">
+        <mat-card-content class="content">
+            <mat-chip-list aria-label="Fish selection">
+                <mat-chip class="tipo">Tipo: {{pokemonType}}</mat-chip>
+                <mat-chip class="altura">Altura: {{pokemon.height}}</mat-chip>
+                <mat-chip class="peso">Peso: {{pokemon.weight}}</mat-chip>
+            </mat-chip-list>
+        </mat-card-content>
+
+    </mat-card>
+</div>

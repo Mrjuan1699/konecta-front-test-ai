@@ -5,7 +5,8 @@ import { PokeListComponent } from './components/poke-list/poke-list.component';
 
 const routes: Routes = [
   {path: "home", component: PokeListComponent},
-  {path: "Poke_Info", component: PokeInfoComponent},
+  {path: "home", component: PokeInfoComponent},
+  {path: "PokeInfo/:id", component: PokeInfoComponent},
   {path: "", pathMatch: "full", redirectTo: "home"},
   {path: "**", pathMatch: "full", redirectTo: "home"},
 
