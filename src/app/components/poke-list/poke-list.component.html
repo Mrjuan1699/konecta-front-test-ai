@@ -10,20 +10,20 @@
 
             <!-- ID Column -->
             <ng-container matColumnDef="position">
-                <th class="titulo" mat-header-cell *matHeaderCellDef mat-sort-header> Número </th>
+                <th mat-header-cell *matHeaderCellDef mat-sort-header> Número: </th>
                 <td mat-cell *matCellDef="let row"> #{{row.position}} </td>
             </ng-container>
 
             <ng-container matColumnDef="imagen">
-                <th mat-header-cell *matHeaderCellDef mat-sort-header> Imagen </th>
+                <th mat-header-cell *matHeaderCellDef mat-sort-header> Imagen: </th>
                 <td mat-cell *matCellDef="let row">
-                    <img src="{{row.image}}" alt="pokemon" width="120"> {{row.imagen}}</td>
+                    <img src="{{row.image}}" alt="pokemon" class="imglista" width="120"> {{row.imagen}}</td>
             </ng-container>
 
 
             <!-- Name Column -->
             <ng-container matColumnDef="name">
-                <th mat-header-cell *matHeaderCellDef mat-sort-header> Nombre </th>
+                <th mat-header-cell *matHeaderCellDef mat-sort-header> Nombre: </th>
                 <td mat-cell *matCellDef="let row"> {{row.name}} </td>
             </ng-container>
 

@@ -31,7 +31,7 @@ export class PokeListComponent implements OnInit {
     for(let i=1; i<= 50; i++){
       this.pokeService.getPokemons(i).subscribe(
         res =>{
-          console.log(res)
+          
           pokemonDato={
            
             position: i,
