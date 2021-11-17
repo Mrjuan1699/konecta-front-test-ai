@@ -28,7 +28,7 @@ export class PokeListComponent implements OnInit {
   getPokemons(){
     let pokemonDato;
     
-    for(let i=1; i<= 50; i++){
+    for(let i=1; i<= 100; i++){
       this.pokeService.getPokemons(i).subscribe(
         res =>{
         

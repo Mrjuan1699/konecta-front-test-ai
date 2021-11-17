@@ -11,6 +11,12 @@ export class PokeInfoComponent implements OnInit {
   pokemon: any = "";
   pokemon2: any = "";
   pokemonType = [];
+  pokemonHp = [];
+  pokemonAtaque = [];
+  pokemonDefensa = [];
+  pokemonAtaEspecial= [];
+  pokemonDefEspecial= [];
+  velocidad = [];
   habitat = "";
   pokemonIMG = "";
   color = "";
@@ -57,7 +63,13 @@ export class PokeInfoComponent implements OnInit {
         this.pokemon = res;
         this.pokemonIMG = this.pokemon.sprites.front_default;
         this.pokemonType = res.types[0].type.name;
-
+        this.pokemonHp= res.stats[0].base_stat;
+        this.pokemonAtaque=res.stats[1].base_stat;
+        this.pokemonDefensa=res.stats[2].base_stat;
+        this.pokemonAtaEspecial=res.stats[3].base_stat;
+        this.pokemonDefEspecial=res.stats[4].base_stat;
+        this.velocidad=res.stats[5].base_stat;
+               
       },
       err => {
 

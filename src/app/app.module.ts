@@ -11,6 +11,8 @@ import { PokeListComponent } from './components/poke-list/poke-list.component';
 import { MaterialModule } from 'src/shared/material.module';
 import { HttpClientModule } from '@angular/common/http';
 import {MatSortModule} from '@angular/material/sort'
+import {MatProgressBarModule} from '@angular/material/progress-bar';
+
 
 @NgModule({
   declarations: [
@@ -26,7 +28,9 @@ import {MatSortModule} from '@angular/material/sort'
     BrowserAnimationsModule,
     MaterialModule,
     HttpClientModule,
-    MatSortModule
+    MatSortModule,
+    MatProgressBarModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

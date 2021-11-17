@@ -1,13 +1,9 @@
-* {
-    text-transform: capitalize;
-}
-
 .boton_volver {
     cursor: pointer;
 }
 
 .card {
-    width: 280px;
+    width: 510px;
     margin: auto;
     margin-top: 35px;
 }
@@ -27,11 +23,12 @@ mat-card-header {
     background-color: #f1f1f1;
     height: 60px;
     border-radius: 10px;
+    text-transform: capitalize;
 }
 
 .content {
     margin-left: 10px;
-    margin-top: -40px;
+    margin-top: -140px;
 }
 
 .container {
@@ -48,10 +45,6 @@ mat-card-header {
 
 .peso {
     background-color: #A52A2A;
-}
-
-#imgprincipal {
-    width: 120px;
 }
 
 .habitat {
@@ -73,4 +66,9 @@ mat-card-header {
     float: right;
     margin-right: 10px;
     margin-bottom: -60px;
+}
+
+.stats {
+    margin-top: 20px;
+    margin-bottom: 50px;
 }

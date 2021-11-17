@@ -10,6 +10,7 @@
             <mat-card-title>{{pokemon.name}}</mat-card-title>
             <mat-card-subtitle># {{pokemon.id}}</mat-card-subtitle>
             <p class="exp">{{pokemon.base_experience}} Exp</p>
+
             <label><img class="ultra_ball" src="../../../assets/imagenes/ultra-bola.png" width="25" alt=""></label>
 
         </mat-card-header>
@@ -22,11 +23,32 @@
                 <mat-chip class="habitat">Habitat: {{pokemon2.habitat.name}}</mat-chip>
                 <mat-chip class="color">Color: {{pokemon2.color.name}}</mat-chip>
 
-                <hr>
 
-                <h3></h3>
+
+
             </mat-chip-list>
-        </mat-card-content>
 
+        </mat-card-content>
+        <div class="stats">
+            <label for=""><img src="../../../assets/imagenes/informacion.png" alt="" width="25"></label>
+            <p>Para mayor información deja el cursor encima de la barra.</p>
+            <p>Vida</p>
+            <mat-progress-bar mode="determinate" value="{{pokemonHp}}" title="{{pokemonHp}}"></mat-progress-bar>
+            <br>
+            <p>Ataque</p>
+            <mat-progress-bar mode="determinate" value=" {{pokemonAtaque}}" title="{{pokemonAtaque}}"></mat-progress-bar>
+            <br>
+            <p>Defensa</p>
+            <mat-progress-bar mode="determinate" value=" {{pokemonDefensa}}" title="{{pokemonDefensa}}"></mat-progress-bar>
+            <br>
+            <p>Ataque especial</p>
+            <mat-progress-bar mode="determinate" value=" {{pokemonAtaEspecial}}" title="{{pokemonAtaEspecial}}"></mat-progress-bar>
+            <br>
+            <p>Defensa especial</p>
+            <mat-progress-bar mode="determinate" value=" {{pokemonDefEspecial}}" title="{{pokemonDefEspecial}}"></mat-progress-bar>
+            <br>
+            <p>Velocidad</p>
+            <mat-progress-bar mode="determinate" value=" {{velocidad}}" title="{{velocidad}}"></mat-progress-bar>
+        </div>
     </mat-card>
 </div>
