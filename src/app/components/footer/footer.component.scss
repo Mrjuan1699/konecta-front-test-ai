@@ -11,4 +11,12 @@ footer {
 footer p {
     margin-top: 50px;
     font-weight: bold;
+    width: 100%;
+    text-align: center;
+}
+
+@media (max-width:540px) {
+    footer {
+        width: 100%;
+    }
 }
