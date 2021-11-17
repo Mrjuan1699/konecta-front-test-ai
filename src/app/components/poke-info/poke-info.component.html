@@ -10,12 +10,15 @@
             <mat-card-title>{{pokemon.name}}</mat-card-title>
             <mat-card-subtitle># {{pokemon.id}}</mat-card-subtitle>
         </mat-card-header>
-        <img class="mat-card-image " src="{{pokemonIMG}}" alt="pokemonimg" width="">
+        <img class="mat-card-image " src="{{pokemonIMG}}" alt="pokemonimg" width="150">
         <mat-card-content class="content">
             <mat-chip-list aria-label="Fish selection">
                 <mat-chip class="tipo">Tipo: {{pokemonType}}</mat-chip>
                 <mat-chip class="altura">Altura: {{pokemon.height}}</mat-chip>
                 <mat-chip class="peso">Peso: {{pokemon.weight}}</mat-chip>
+                <mat-chip class="habitat">Habitat: {{pokemon2.habitat.name}}</mat-chip>
+                <mat-chip class="color">Color: {{pokemon2.color.name}}</mat-chip>
+
             </mat-chip-list>
         </mat-card-content>
 

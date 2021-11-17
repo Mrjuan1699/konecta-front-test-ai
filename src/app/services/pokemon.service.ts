@@ -5,17 +5,17 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root'
 })
 export class PokemonService {
-baseUrl =environment.baseUrl;
-baseUrl_Color =environment.baseUrl_Color;
+  baseUrl = environment.baseUrl;
+  baseUrl_Species = environment.baseUrl_Species;
   constructor(private http: HttpClient) { }
 
-  getPokemons(index: number){
-  return this.http.get<any>(`${this.baseUrl}/pokemon/${index}`);
-}
+  getPokemons(index: number) {
+    return this.http.get<any>(`${this.baseUrl}/pokemon/${index}`);
+  }
 
-getColors(index: number){
-  return this.http.get<any>(`${this.baseUrl_Color}/${index}`);
-}
+  getSpecies(index: number) {
+    return this.http.get<any>(`${this.baseUrl_Species}/${index}`);
+  }
 
 }
 

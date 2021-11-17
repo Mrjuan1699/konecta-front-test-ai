@@ -5,7 +5,7 @@
 export const environment = {
   production: false,
   baseUrl: "https://pokeapi.co/api/v2",
-  baseUrl_Color: "https://pokeapi.co/api/v2/pokemon-color"
+  baseUrl_Species: "https://pokeapi.co/api/v2/pokemon-species"
 };
 
 /*
